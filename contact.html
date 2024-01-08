@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        #bu {
+            color: rgb(1, 1, 1);
+            position: relative;
+            left: 300px;
+        }
+
+        .contact {
+            padding: 130px 0;
+        }
+
+        .contact .heading h2 {
+            font-size: 40px;
+            font-weight: 700;
+            margin: 0;
+            padding: 0;
+        }
+
+        .contact .heading h2 span {
+            color: #fffefe;
+        }
+
+        .contact .heading p {
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 1.7;
+            color: #999999;
+            margin: 20px 0 60px;
+            padding: 0;
+        }
+
+        .contact .form-control {
+            padding: 25px;
+            font-size: 15px;
+            margin-bottom: 10px;
+            /* border:2px solid black; */
+            background: #e3f5f9;
+            border: 0;
+            border-radius: 10px;
+        }
+
+        .contact button.btn {
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 15px;
+            background: #7bdcf9;
+            color: #ffffff;
+        }
+
+        .contact .title h3 {
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .contact .title p {
+            font-size: 14px;
+            font-weight: 400;
+            color: #999;
+            line-height: 1.6;
+            margin: 0 0 40px;
+        }
+
+        .contact .content .info {
+            margin-top: 30px;
+        }
+
+        .contact .content .info i {
+            font-size: 30px;
+            padding: 0;
+            margin: 0;
+            color: #02434b;
+            margin-right: 20px;
+            text-align: center;
+            width: 20px;
+        }
+
+        .contact .content .info h4 {
+            font-size: 13px;
+            line-height: 1.4;
+        }
+
+        .contact .content .info h4 span {
+            font-size: 13px;
+            font-weight: 300;
+            color: #999999;
+        }
+    </style>
+</head>
+
+<body background="contact2.avif">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand" style="background-color:#aad9fa; padding-top: 0px;padding-bottom: 0px;">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="/">
+                <img src="logo.png" alt="Logo" width="32" height="26" class="d-inline-block align-text-top">
+
+            </a>
+
+            <a class="navbar-brand" href="index.html"><small><b>iCoder</b></small></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto ms-5 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html"><img src="home.png" alt="Logo"
+                                width="26" height="22" class="d-inline-block align-text-top">
+                            <small><b>Home</b></small></a>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a class="nav-link" href="about.html"><img src="about.png" alt="Logo" width="26" height="22"
+                                class="d-inline-block align-text-top">
+                            <small><b>About</b></small></a>
+                    </li>
+                    <li class="nav-item dropdown ms-3">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <img src="topic.png" alt="Logo" width="26" height="22"
+                                class="d-inline-block align-text-top">
+                            <small><b>Topics</b></small>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a class="nav-link  active" href="contact.html"><img src="contact.png" alt="Logo" width="26"
+                                height="22" class="d-inline-block align-text-top">
+                            <small><b>Contact</b></small></a>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <a class="nav-link disabled" aria-disabled="true"><small>Disabled</small></a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-3 btn-sm" style="padding-top: 0px; padding-bottom: 0px; "
+                        type="search" placeholder="Search">
+                    <button class="btn btn-sm btn-outline-success" style="padding-top: 0px; padding-bottom: 0px;"
+                        type="submit">Search</button>
+                </form>
+                <div class="mx-2">
+                    <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#LoginModal"
+                        style="padding-top: 0px; padding-bottom: 0px;">Login</button>
+                    <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#SignupModal"
+                        style="padding-top: 0px; padding-bottom: 0px;">Signup</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--login model -->
+    <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="LoginModalLabel">Login iCoder</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <form>
+                        <img class="mb-4" src="logo.png" alt="" width="72" height="57">
+                        <h1 class="h3 mb-3 fw-normal">Please Login</h1>
+
+                        <div class="form-floating">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Email address</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                            <label for="floatingPassword">Password</label>
+                        </div>
+
+                        <div class="form-check text-start my-3">
+                            <input class="form-check-input" type="checkbox" value="remember-me" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Remember me
+                            </label>
+                        </div>
+                        <button class="btn btn-primary w-100 py-2" type="submit">Login</button>
+
+                    </form>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- signup model -->
+    <div class="modal fade" id="SignupModal" tabindex="-1" aria-labelledby="SignupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="SignupModalLabel">Get an iCoder Account</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <form>
+                        <img class="mb-4" src="logo.png" alt="" width="72" height="57">
+                        <h1 class="h3 mb-3 fw-normal">Please Signup</h1>
+
+                        <div class="form-floating">
+                            <input type="name" class="form-control" id="floatingInput" placeholder="enter your name">
+                            <label for="floatingInput">Name</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Email address</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="password" class="form-control" id="floatingPassword"
+                                placeholder="Create Password">
+                            <label for="floatingPassword">Create Password</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="password" class="form-control" id="floatingPassword2"
+                                placeholder="Confirm Password">
+                            <label for="floatingPassword">Confirm Password</label>
+                        </div>
+
+                        <div class="form-check text-start my-3">
+                            <input class="form-check-input" type="checkbox" value="remember-me" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Remember me
+                            </label>
+                        </div>
+                        <button class="btn btn-primary w-100 py-2" type="submit">Signup</button>
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- container box -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="heading text-center">
+                <h2>Contact
+                    <span style="color:#0991ba"> Us </span>
+                </h2><br>
+                <h3>We'd Love to Here From You, Get In Touch With Us!</h3>
+            </div>
+            <br>
+            <div class="row">
+                <br><br>
+                <div class="col-md-5" style="border:3px solid rgb(0, 0, 0)">
+                    <div class="title">
+                        <h2>Contact detail</h2>
+                        <p>Use Guest mode to sign in privately. Learn more. Next. Create account. For my personal use
+                        </p>
+                    </div>
+                    <div class="content">
+                        <!-- Info-1 -->
+                        <div class="info">
+                            <i class="fas fa-mobile-alt"></i>
+                            <h6 class="d-inline-block">PHONE :
+                                <br>
+                                <span>+12457836913 , +12457836913</span>
+                            </h6>
+                        </div>
+                        <!-- Info-2 -->
+                        <div class="info">
+                            <i class="far fa-envelope"></i>
+                            <h6 class="d-inline-block">EMAIL :
+                                <br>
+                                <span>example@info.com</span>
+                            </h6>
+                        </div>
+                        <!-- Info-3 -->
+                        <div class="info">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h6 class="d-inline-block">ADDRESS :<br>
+                                <span>6743 last street , Abcd, Xyz</span>
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-7">
+
+                    <form style="border:3px solid rgb(0, 0, 0); margin-left: 30px;">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" placeholder="Name">
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="email" class="form-control" placeholder="Email">
+                            </div>
+                            <div class="col-sm-12">
+                                <input type="text" class="form-control" placeholder="Subject">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" rows="5" id="comment" placeholder="Message"></textarea>
+                        </div>
+                        <button class="btn btn-block" id="bu" type="submit">Send Now!</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <!-- Footer -->
+    <div class="container" style="background-color: #abc3cd;">
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+            <p>© 2023 Company, Inc. All rights reserved.</p>
+            <ul class="list-unstyled d-flex">
+                <li class="ms-3"><a class="link-body-emphasis" href="#"><img class="bi" width="24" height="24"
+                            src="1.jpg" alt=""></a></li>
+                <li class="ms-3"><a class="link-body-emphasis" href="#"><img class="bi" width="24" height="24"
+                            src="2.png" alt=""></a></li>
+                <li class="ms-3"><a class="link-body-emphasis" href="#"><img class="bi" width="24" height="24"
+                            src="3.png" alt=""></a></li>
+                <li class="ms-3"><a class="link-body-emphasis" href="#"><img class="bi" width="24" height="24"
+                            src="4.png" alt=""></a></li>
+                <li class="ms-3"><a class="link-body-emphasis" href="#"><img class="bi" width="24" height="24"
+                            src="5.png" alt=""></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
